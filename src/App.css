@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+.movie-container {
+  /* background-color: orange; */
+  width: 340px;
+  /* to fit counter content when small*/
+  height: min-content;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.movie-specs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.movie-poster {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.movie-name {
+  font-size: 24px;
+  margin: 0;
+}
+
+.movie-summary {
+  margin-top: 0;
+}
+
+.movie-rating {
+  font-size: 18px;
+}
+
+.movie-list-container {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.counter-container{
+  display: flex;
+  gap: 0.5rem;
+}
+
+.counter-container > button{
+  font-size: 20px;
+}
+
+.add-movie-form{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 650px;
+  margin: 0 auto;
+  gap :10px;
+
 }
 
-.App-link {
-  color: #61dafb;
+body{
+
+  font-family: 'Roboto', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.not-found{
+  width: 75%;
+  object-fit:cover;
+  align-content: center;
+  
+}
+
+.movie-detailes-container{
+  max-width: 700px;
+  padding: 16px;
+}
+
+.trailer-container{
+  padding-left: 30px;
+  /* padding: 60px; */
+}
+
+.route-container{
+  padding: 32px;
+  
+}
+
+.home-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
 }
