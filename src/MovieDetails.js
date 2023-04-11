@@ -15,7 +15,7 @@ export function MovieDetails() {
     fetch(`https://632161f482f8687273b0b104.mockapi.io/movies/${movieid}`)
       .then(data => data.json())
       .then((mvs) => setMovie(mvs));
-  }, []);
+  }, [movieid]);
 
   const styles = {
     color: movie.rating >= 8.5 ? "green" : "red",
